@@ -64,8 +64,8 @@ export default async function HomePage({
       <HeroSection />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <ProductGrid
-          initialProducts={(products as Product[]) ?? []}
-          categories={(categories as Category[]) ?? []}
+         initialProducts={(products as unknown as Product[]) ?? []}
+          categories={(categories as unknown as Category[]) ?? []}
           currentUser={user}
         />
       </main>

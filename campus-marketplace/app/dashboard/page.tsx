@@ -41,8 +41,8 @@ export default async function DashboardPage() {
           <p className="text-slate-500 mt-1">Manage your listings and track your sales.</p>
         </div>
         <DashboardClient
-          initialProducts={(products as Product[]) ?? []}
-          categories={(categories as Category[]) ?? []}
+         initialProducts={(products as Product[]) ?? []}
+categories={(categories as Category[]) ?? []}
           user={user}
         />
       </main>
